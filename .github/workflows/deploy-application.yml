@@ -19,5 +19,10 @@ jobs:
           npm install
           npm run prod
 
+      - name : Configure PHP 7.4
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: mbstring, ctype, fileinfo, openssl, PDO, bcmath, tokenize, xml
 
 
