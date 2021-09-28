@@ -23,9 +23,12 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-          extensions: mbstring, ctype, fileinfo, openssl, PDO, bcmath, tokenize, xml
+          extensions: mbstring, ctype, fileinfo, openssl, PDO, bcmath, xml
 
       - name: Install Composer dependencies
         run: composer install --no-dev --no-interaction --prefer-dist
+
+      - name: Create deployment artifacts
+        run: tar -czf app.tar.gz --exclude=*.git --exclude=node_modules *
 
 
