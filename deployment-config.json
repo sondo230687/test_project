@@ -1,0 +1,12 @@
+[
+  {
+    "name" : "rabbit-test",
+    "ip" : "10.1.136.223",
+    "username": "rabbit",
+    "password" : "Smart@135",
+    "port" : "22",
+    "beforeHooks" : "",
+    "afterHooks" : "",
+    "path" : "/var/www/"
+  }
+]
